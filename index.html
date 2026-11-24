@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Calango Ninja | Escalada em rocha no Rio de Janeiro: batismo, curso e guia</title>
+<meta name="description" content="Batismo de escalada, curso básico e guiamento nas vias clássicas do Rio com o Calango Ninja, instrutor e guia de escalada. Descubra em 1 minuto qual escalada é a sua.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calango Ninja · Escalada em rocha no Rio de Janeiro">
+<meta property="og:description" content="Batismo, curso básico e guiamento nas vias clássicas do Rio. Para marcas: conteúdo e parcerias.">
+<meta property="og:image" content="https://dryesko-creator.github.io/calango-ninja/og.jpg">
+<meta property="og:url" content="https://dryesko-creator.github.io/calango-ninja/">
+<link rel="canonical" href="https://dryesko-creator.github.io/calango-ninja/">
+<meta name="theme-color" content="#0f140f">
+<link rel="icon" href="perfil.webp">
+<link rel="preload" href="inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="hero.webp" as="image">
+<style>
+@font-face{font-family:Inter;src:url(inter-latin-wght-normal.woff2) format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Barlow Condensed';src:url(barlow-condensed-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Barlow Condensed';src:url(barlow-condensed-latin-800-normal.woff2) format('woff2');font-weight:800;font-display:swap}
+:root{--bg:#0f140f;--bg2:#151c15;--card:#1b231b;--line:rgba(233,220,198,.12);--sand:#e9dcc6;--mut:#a9ad9f;--rock:#e8743b;--rock2:#f59e4b;--leaf:#8bc34a;--wa:#25d366}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--sand);font:400 16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:'Barlow Condensed',Impact,sans-serif;font-weight:800;text-transform:uppercase;line-height:1;letter-spacing:.3px}
+h2{font-size:clamp(34px,5vw,54px)}
+h2 em,h1 em{font-style:normal;color:var(--rock2)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:700 12px Inter;letter-spacing:2px;text-transform:uppercase;color:var(--rock2);margin-bottom:14px}
+.eyebrow:before{content:"";width:26px;height:2px;background:var(--rock)}
+.lead{color:var(--mut);font-size:17px;max-width:640px;margin-top:14px}
+section{padding:80px 0;position:relative}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:12px;font:800 15px Inter;text-decoration:none;cursor:pointer;border:0;transition:transform .15s,box-shadow .15s}
+.btn:active{transform:scale(.98)}
+.btn-p{background:linear-gradient(180deg,var(--rock2),var(--rock));color:#1a0f06;box-shadow:0 10px 30px rgba(232,116,59,.35)}
+.btn-o{background:rgba(233,220,198,.06);border:1px solid var(--line);color:var(--sand)}
+.btn-wa{background:var(--wa);color:#05210f}
+.btn svg{width:20px;height:20px}
+/* demo bar */
+.demo{background:#26301f;color:#d7e3c4;font-size:12.5px;text-align:center;padding:8px 14px}
+.demo b{color:#fff}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(15,20,15,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{width:40px;height:40px;border-radius:50%;border:2px solid var(--rock)}
+.logo b{font:800 21px 'Barlow Condensed';letter-spacing:.5px;text-transform:uppercase}
+nav{display:flex;gap:22px}
+nav a{font-size:14px;color:var(--mut);text-decoration:none}
+nav a:hover{color:var(--sand)}
+.hd .btn{min-height:42px;padding:0 18px;font-size:13px}
+@media(max-width:900px){nav{display:none}}
+/* hero */
+.hero{padding:56px 0 64px;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 80% 30%,rgba(232,116,59,.16),transparent 70%)}
+.hgrid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(46px,6.4vw,84px)}
+.hero .lead{font-size:18px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chips span{font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:999px;background:rgba(139,195,74,.1);border:1px solid rgba(139,195,74,.3);color:#cfe6b3}
+.frame{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:720/1000;max-height:640px;justify-self:center;width:100%;max-width:440px;box-shadow:0 30px 80px rgba(0,0,0,.55);border:1px solid var(--line)}
+.frame img{width:100%;height:100%;object-fit:cover}
+.frame .tag{position:absolute;left:14px;bottom:14px;right:14px;background:rgba(15,20,15,.8);backdrop-filter:blur(8px);border-radius:12px;padding:12px 14px;font-size:13px;color:var(--mut)}
+.frame .tag b{display:block;color:var(--sand);font-size:15px}
+.frame .tv{position:absolute;top:14px;left:14px;background:#fff;color:#111;font:800 11px Inter;padding:6px 9px;border-radius:6px;letter-spacing:.5px}
+.proof{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:40px;position:relative}
+.proof div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.proof b{display:block;font:800 30px 'Barlow Condensed';color:var(--rock2)}
+.proof small{color:var(--mut);font-size:12.5px}
+@media(max-width:900px){.hgrid{grid-template-columns:1fr;gap:32px}.proof{grid-template-columns:repeat(2,1fr)}.frame{max-width:100%;aspect-ratio:4/5}}
+@media(max-width:520px){.cta-row .btn{width:100%}}
+/* quiz */
+.quiz{background:var(--bg2)}
+.qbox{max-width:760px;margin:34px auto 0;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px}
+.qbar{height:5px;border-radius:9px;background:rgba(233,220,198,.1);overflow:hidden;margin-bottom:22px}
+.qbar i{display:block;height:100%;width:33%;background:var(--rock);transition:width .3s}
+.qstep small{color:var(--mut);font-size:13px}
+.qstep h3{font-size:30px;margin:6px 0 18px}
+.opts{display:grid;gap:10px}
+.opts button{text-align:left;font:600 15px Inter;color:var(--sand);background:rgba(233,220,198,.04);border:1px solid var(--line);border-radius:12px;padding:16px 18px;cursor:pointer;transition:border-color .15s,background .15s}
+.opts button:hover{border-color:var(--rock);background:rgba(232,116,59,.08)}
+.qres{text-align:center}
+.qres h3{font-size:36px;margin:8px 0 10px;color:var(--rock2)}
+.qres p{color:var(--mut);margin-bottom:22px}
+.qres .again{display:block;margin:16px auto 0;background:none;border:0;color:var(--mut);text-decoration:underline;cursor:pointer;font:500 14px Inter}
+/* experiences */
+.xgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.xp{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.xp .ph{aspect-ratio:4/3;overflow:hidden}
+.xp .ph img{width:100%;height:100%;object-fit:cover}
+.xp .bd{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.xp .lv{font:700 11px Inter;letter-spacing:1.5px;text-transform:uppercase;color:var(--leaf)}
+.xp h3{font-size:26px}
+.xp p{color:var(--mut);font-size:14.5px;flex:1}
+.xp .btn{min-height:46px;font-size:14px;margin-top:8px}
+@media(max-width:1000px){.xgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.xgrid{grid-template-columns:1fr}}
+/* press */
+.press{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;margin-top:34px;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.press img{width:100%;height:100%;object-fit:cover;max-height:420px}
+.press .bd{padding:30px}
+.press .tv{display:inline-block;background:#fff;color:#111;font:800 12px Inter;padding:6px 10px;border-radius:6px;margin-bottom:14px}
+.press h3{font-size:34px;margin-bottom:12px}
+.press p{color:var(--mut);margin-bottom:20px}
+@media(max-width:800px){.press{grid-template-columns:1fr}.press img{max-height:300px}}
+/* reels */
+.rhead{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.arrows{display:flex;gap:8px}
+.arrows button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--sand);font-size:20px;cursor:pointer}
+.track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:30px 0 10px;scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.rc{flex:0 0 220px;scroll-snap-align:start;position:relative;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000;cursor:pointer}
+.rc img{width:100%;height:100%;object-fit:cover}
+.rc:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.85))}
+.rc .vw{position:absolute;top:10px;left:10px;z-index:2;background:var(--rock);color:#1a0f06;font:800 12px Inter;padding:4px 8px;border-radius:6px}
+.rc .t{position:absolute;z-index:2;left:12px;right:12px;bottom:12px;font-size:13px;font-weight:700}
+.rc .pl{position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:rgba(15,20,15,.7);display:grid;place-items:center;border:1px solid rgba(255,255,255,.3)}
+.rc .pl svg{width:22px;height:22px;margin-left:3px}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;padding:20px}
+.lb.on{display:flex}
+.lb .in{width:min(400px,100%);height:min(720px,90vh);background:#fff;border-radius:14px;overflow:hidden}
+.lb iframe{width:100%;height:100%;border:0}
+.lb .x{position:absolute;top:16px;right:16px;width:46px;height:46px;border-radius:50%;border:0;background:#fff;color:#111;font-size:22px;cursor:pointer}
+/* brands */
+.brands{background:linear-gradient(180deg,var(--bg2),var(--bg))}
+.bgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:30px}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.nums div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.nums b{display:block;font:800 36px 'Barlow Condensed';color:var(--rock2);line-height:1}
+.nums small{color:var(--mut);font-size:13px}
+.svc{list-style:none;display:grid;gap:12px}
+.svc li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.svc b{display:block;font-size:16px;margin-bottom:2px}
+.svc span{color:var(--mut);font-size:14px}
+.partners{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.partners a,.partners>div{flex:1 1 200px;text-decoration:none;background:rgba(139,195,74,.08);border:1px dashed rgba(139,195,74,.45);border-radius:14px;padding:14px 16px}
+.partners b{display:block}
+.partners small{color:var(--mut)}
+@media(max-width:860px){.bgrid{grid-template-columns:1fr}}
+/* about */
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center}
+.about img{border-radius:20px;border:1px solid var(--line);width:100%;aspect-ratio:4/5;object-fit:cover}
+.about p{color:var(--mut);margin-top:14px}
+.about .q{margin-top:22px;padding:18px 20px;border-left:3px solid var(--rock);background:var(--card);border-radius:0 12px 12px 0;color:var(--sand);font-weight:600}
+@media(max-width:860px){.about{grid-template-columns:1fr}}
+/* spots */
+.spots{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+.spots a{text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.spots b{display:block;font:800 22px 'Barlow Condensed';text-transform:uppercase}
+.spots small{color:var(--mut)}
+.spots i{font-style:normal;color:var(--rock2);font-size:13px;font-weight:700;display:block;margin-top:8px}
+@media(max-width:860px){.spots{grid-template-columns:1fr 1fr}}
+/* faq */
+.faq{max-width:780px;margin:30px auto 0}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-weight:700;font-size:16.5px;list-style:none;display:flex;justify-content:space-between;gap:14px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--rock2);font-size:22px;line-height:1}
+details[open] summary:after{content:"−"}
+details p{color:var(--mut);margin-top:10px}
+/* final */
+.final{text-align:center;background:radial-gradient(60% 80% at 50% 0%,rgba(232,116,59,.18),transparent 70%)}
+.final .cta-row{justify-content:center}
+footer{border-top:1px solid var(--line);padding:34px 0 120px;color:var(--mut);font-size:14px}
+.fgrid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer a{color:var(--sand)}
+/* sticky */
+.sticky{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;display:none;gap:8px;transform:translateY(calc(100% + 90px));transition:transform .3s}
+.sticky.on{transform:none}
+.sticky .btn{flex:1;min-height:52px;font-size:14px;padding:0 12px}
+@media(max-width:760px){.sticky{display:flex}}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.js .rv.in{opacity:1;transform:none}
+/* melhorias */
+.nota{display:none;margin-top:14px;background:#2b1a0f;border:1px dashed var(--rock);border-radius:12px;padding:12px 14px;font-size:13.5px;color:#f3d2b8}
+.nota b{display:block;color:var(--rock2);font-size:12px;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+body.melhorias .nota{display:block}
+.nota.flash{animation:fl 1.2s 2}
+@keyframes fl{50%{box-shadow:0 0 0 6px rgba(232,116,59,.5)}}
+.tog{position:fixed;right:16px;top:118px;z-index:70;background:#2b1a0f;border:1px solid rgba(232,116,59,.7);color:#fff;font:700 12.5px Inter;padding:10px 14px;border-radius:999px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.5)}
+.tog i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--rock);margin-right:8px;animation:bl 1.4s infinite}
+@keyframes bl{50%{opacity:.2}}
+@media(max-width:760px){.tog{top:auto;right:10px;bottom:calc(150px + env(safe-area-inset-bottom));padding:7px 11px;font-size:11.5px}}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);z-index:150;background:#141a14;border-left:1px solid var(--line);transform:translateX(105%);transition:transform .3s;display:flex;flex-direction:column}
+.drawer.on{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:1px solid var(--line)}
+.dh b{font:800 22px 'Barlow Condensed';text-transform:uppercase}
+.dh button{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:none;color:var(--sand);font-size:18px;cursor:pointer}
+.db{overflow:auto;padding:16px 20px 40px}
+.dsub{color:var(--mut);font-size:13.5px;margin-bottom:14px}
+.di{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:10px}
+.di b{display:block;color:var(--rock2);font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.di p{font-size:14px;margin:6px 0 8px;color:var(--sand)}
+.di button{background:none;border:0;color:var(--leaf);font:700 13px Inter;cursor:pointer;padding:10px 0;min-height:44px}
+.fora{margin-top:20px}
+.fora h4{font:800 20px 'Barlow Condensed';text-transform:uppercase;margin-bottom:8px}
+.fora li{font-size:14px;color:var(--mut);margin:0 0 8px 18px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}.tog i{animation:none}}
+</style>
+</head>
+<body>
+<div class="demo"><b>Demonstração</b> · proposta de site para o Calango Ninja. Textos e valores a validar. Toque em <b>"Ver melhorias"</b> para ver o que muda.</div>
+<header><div class="wrap hd">
+  <a class="logo" href="#inicio"><img src="perfil.webp" alt="" width="40" height="40"><b>Calango Ninja</b></a>
+  <nav><a href="#teste">Qual escalada?</a><a href="#experiencias">Experiências</a><a href="#videos">Vídeos</a><a href="#marcas">Para marcas</a><a href="#sobre">Sobre</a></nav>
+  <a class="btn btn-p" href="#teste" data-ev="cta_header">Quero escalar</a>
+</div></header>
+
+<main id="inicio">
+<section class="hero"><div class="wrap">
+  <div class="hgrid">
+    <div class="rv">
+      <span class="eyebrow">Escalada em rocha · Rio de Janeiro</span>
+      <h1>Escale o Rio com o <em>Calango Ninja</em></h1>
+      <p class="lead">Batismo para quem nunca escalou, curso básico para quem quer se virar sozinho e guiamento nas vias clássicas do Rio, com um instrutor que vive na rocha desde 2018.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href="#teste" data-ev="cta_teste_hero">Qual escalada é a minha? · 1 min</a>
+        <a class="btn btn-o" href="#marcas" data-ev="cta_marca_hero">Sou marca</a>
+      </div>
+      <div class="chips"><span>Da Baixada Fluminense pro mundo</span><span>Destaque no Esporte Espetacular</span><span>Instrutor e guia de escalada</span></div>
+      <p class="nota"><b>Melhoria · duas portas na primeira tela</b>Hoje o link da bio só tem cupom, matéria, vídeo e mídia kit. Não há como contratar uma aula. Aqui, em 3 segundos, o aluno vai para "Quero escalar" e a marca para "Sou marca".</p>
+    </div>
+    <div class="frame rv"><img src="hero.webp" alt="Calango Ninja escalando a Pedra da Gávea, no Rio de Janeiro" width="720" height="1000" fetchpriority="high"><span class="tv">ESPORTE ESPETACULAR</span><div class="tag"><b>Passagem dos Olhos, Pedra da Gávea</b>Do Esporte Espetacular para a sua primeira via</div></div>
+  </div>
+  <div class="proof rv">
+    <div><b>34,3 mil</b><small>seguidores no Instagram</small></div>
+    <div><b>293 mil</b><small>views no reel mais visto</small></div>
+    <div><b>Desde 2018</b><small>escalando no Rio</small></div>
+    <div><b>Rede Globo</b><small>matéria no Esporte Espetacular</small></div>
+  </div>
+</div></section>
+
+<section class="quiz" id="teste"><div class="wrap">
+  <div style="text-align:center"><span class="eyebrow">Teste de 1 minuto</span><h2>Qual escalada <em>é a sua?</em></h2><p class="lead" style="margin:14px auto 0">Três perguntas. No fim, você já fala com o Calango no WhatsApp com a experiência certa.</p></div>
+  <div class="qbox rv" id="qbox"></div>
+  <p class="nota" style="max-width:760px;margin-left:auto;margin-right:auto"><b>Melhoria · cada pessoa no caminho certo</b>Quem nunca escalou e quem quer uma via clássica precisam de conversas diferentes. O teste chega no WhatsApp já dizendo o que a pessoa quer, e o Calango responde em uma mensagem só.</p>
+</div></section>
+
+<section id="experiencias"><div class="wrap">
+  <span class="eyebrow">Experiências</span>
+  <h2>Do primeiro passo na rocha <em>às vias clássicas</em></h2>
+  <p class="lead">Valores, datas e ponto de encontro são combinados direto com o Calango no WhatsApp.</p>
+  <div class="xgrid">
+    <div class="xp rv"><div class="ph"><img src="DekjyI1xcBP.webp" alt="Escaladora em parede de rocha" loading="lazy" width="360" height="640"></div><div class="bd"><span class="lv">Nunca escalei</span><h3>Batismo de escalada</h3><p>Sua primeira vez na rocha, com instrução de segurança e o Calango do teu lado o tempo todo.</p><a class="btn btn-wa wa" data-msg="Oi, Calango! Vim pelo site e quero fazer um batismo de escalada." data-ev="wa_batismo" href="#">Quero meu batismo</a></div></div>
+    <div class="xp rv"><div class="ph"><img src="Deej42LRqiS.webp" alt="Corda de escalada sendo enrolada" loading="lazy" width="360" height="640"></div><div class="bd"><span class="lv">Quero aprender</span><h3>Curso básico</h3><p>Os procedimentos para escalar com autonomia: montar o próprio rapel, descer com segurança, usar o backup.</p><a class="btn btn-wa wa" data-msg="Oi, Calango! Vim pelo site e quero saber do curso básico de escalada." data-ev="wa_curso" href="#">Quero o curso</a></div></div>
+    <div class="xp rv"><div class="ph"><img src="Dfety9QAiwL.webp" alt="Guia conduzindo escalada com vista para a Baía de Guanabara" loading="lazy" width="360" height="640"></div><div class="bd"><span class="lv">Já escalo</span><h3>Guiamento no Rio</h3><p>Vias clássicas como a Passagem dos Olhos, na Pedra da Gávea, e as paredes da Urca, com guia experiente.</p><a class="btn btn-wa wa" data-msg="Oi, Calango! Vim pelo site e quero contratar um guiamento em uma via no Rio." data-ev="wa_guia" href="#">Quero um guia</a></div></div>
+    <div class="xp rv"><div class="ph"><img src="mirante.webp" alt="Calango Ninja no alto de uma montanha" loading="lazy" width="1200" height="900"></div><div class="bd"><span class="lv">Aventura maior</span><h3>Viagens e expedições</h3><p>Serra do Cipó, Serra do Lenheiro, Patagônia: viagens de escalada fora do Rio, com programação própria.</p><a class="btn btn-wa wa" data-msg="Oi, Calango! Vim pelo site e quero saber das próximas viagens de escalada." data-ev="wa_viagem" href="#">Ver próximas viagens</a></div></div>
+  </div>
+  <p class="nota"><b>Melhoria · a oferta aparece</b>Hoje o batismo e o curso só aparecem em destaques de 4 a 5 anos atrás, sem preço nem data. Aqui cada experiência tem chamada própria e leva ao WhatsApp com a mensagem pronta. O preço entra quando o Calango confirmar.</p>
+</div></section>
+
+<section id="videos" style="background:var(--bg2)"><div class="wrap">
+  <span class="eyebrow">Na mídia</span>
+  <h2>O Brasil viu o Calango <em>na Pedra da Gávea</em></h2>
+  <div class="press rv">
+    <img src="CnktCUgvGPw.webp" alt="Calango Ninja na Pedra da Gávea" loading="lazy" width="360" height="640" style="object-position:center 30%">
+    <div class="bd"><span class="tv">ESPORTE ESPETACULAR · GLOBO</span><h3>Calango Ninja escala sem cordas a Pedra da Gávea</h3><p>A travessia da Passagem dos Olhos levou o nome do Calango para a TV aberta.</p><a class="btn btn-o" href="https://globoplay.globo.com/v/11654065/" target="_blank" rel="noopener" data-ev="globo">Assistir no Globoplay</a></div>
+  </div>
+  <div class="rhead" style="margin-top:60px"><div><span class="eyebrow">Vídeos</span><h2>Os mais <em>vistos</em></h2></div><div class="arrows"><button type="button" aria-label="Anterior" data-d="-1">‹</button><button type="button" aria-label="Próximo" data-d="1">›</button></div></div>
+  <div class="track" id="track"></div>
+  <p class="nota"><b>Melhoria · alcance que vira aluno</b>Os reels chegam a 293 mil e 105 mil views, mas quem assiste não tem para onde ir. No site, cada vídeo fica ao lado do botão de WhatsApp. Com o Pixel instalado, quem assistiu pode ver um anúncio do batismo depois.</p>
+</div></section>
+
+<section class="brands" id="marcas"><div class="wrap">
+  <span class="eyebrow">Para marcas</span>
+  <h2>Sua marca na rocha, <em>com quem vive dela</em></h2>
+  <p class="lead">Conteúdo real de escalada, montanhismo e natureza, feito por um instrutor e guia, para uma audiência que pratica o esporte.</p>
+  <div class="bgrid">
+    <div>
+      <div class="nums rv">
+        <div><b>34,3 mil</b><small>seguidores no Instagram</small></div>
+        <div><b>~10,8 mil</b><small>views medianas nos últimos 15 reels</small></div>
+        <div><b>293 mil</b><small>views no reel de maior alcance</small></div>
+        <div><b>3,4 mil</b><small>seguidores no TikTok, 70,7 mil curtidas</small></div>
+      </div>
+      <div class="partners rv">
+        <a href="https://influencer.tenayabrasil.store/i/calango-ninja" target="_blank" rel="noopener" data-ev="tenaya"><b>Tenaya</b><small>Sapatilhas de escalada · loja do parceiro</small></a>
+        <div><b>SubSub · 15% OFF</b><small>Cupom do parceiro · link direto da loja a configurar</small></div>
+      </div>
+    </div>
+    <ul class="svc rv">
+      <li><b>Conteúdo para marcas e produtos</b><span>Reels e stories com o produto em uso real, na rocha.</span></li>
+      <li><b>Publicidade e patrocínio</b><span>Parcerias de médio e longo prazo, com entregas mensais.</span></li>
+      <li><b>Palestras e eventos</b><span>Montanhismo, superação e acessibilidade no esporte.</span></li>
+      <li><b>Projetos sociais</b><span>Inclusão de novos públicos na escalada.</span></li>
+      <li style="background:none;border:0;padding:6px 0"><a class="btn btn-p wa" data-msg="Olá, Calango! Sou de uma marca e quero receber o mídia kit atualizado." data-ev="wa_marca" href="#" style="width:100%">Pedir mídia kit e valores</a></li>
+    </ul>
+  </div>
+  <p class="nota"><b>Melhoria · mídia kit sempre atual</b>O mídia kit atual mostra calendário de 2024 e 2025, 31,6 mil seguidores (hoje são 34,3 mil) e um site, calangosdomato.com.br, que não abre. E todo link do bit.ly passa antes por uma página de anúncio de outra empresa. Aqui a marca vê os números de hoje e fala direto com ele.</p>
+  <p class="nota"><b>Melhoria · cupom que vende</b>O cupom de 15% da SubSub leva hoje a uma imagem no Canva, não à loja. Com o link direto, a marca vê venda e renova a parceria.</p>
+</div></section>
+
+<section id="sobre"><div class="wrap about">
+  <img class="rv" src="calango.webp" alt="Rafael Sales, o Calango Ninja, de capacete no alto da montanha" loading="lazy" width="720" height="960">
+  <div class="rv">
+    <span class="eyebrow">Quem é o Calango</span>
+    <h2>Rafael Sales, <em>da Baixada pro mundo</em></h2>
+    <p>Nascido na Baixada Fluminense, o Rafael virou o Calango Ninja: escalador, instrutor e guia de escalada em rocha no Rio de Janeiro, montanhista e criador de conteúdo.</p>
+    <p>Para ele, a escalada é uma forma de conectar pessoas com a natureza e com elas mesmas. Por isso atua em projetos de inclusão no montanhismo e usa a internet para levar a escalada a quem nunca imaginou subir numa parede.</p>
+    <div class="q">Escalar com segurança, levar gente nova para a montanha e cuidar da natureza no caminho.</div>
+    <p class="nota"><b>Melhoria · a história vende a aula</b>A história da Baixada e o trabalho social estavam só no mídia kit. No site, viram o motivo de alguém escolher o Calango e não uma escola qualquer.</p>
+  </div>
+</div></section>
+
+<section id="onde" style="background:var(--bg2)"><div class="wrap">
+  <span class="eyebrow">Onde escalamos</span>
+  <h2>As paredes <em>do Rio</em></h2>
+  <div class="spots">
+    <a class="rv" href="https://www.google.com/maps/search/Plat%C3%B4+da+Lagoa+Rio+de+Janeiro" target="_blank" rel="noopener"><b>Platô da Lagoa</b><small>Lagoa · ótimo para o batismo</small><i>Ver no mapa ↗</i></a>
+    <a class="rv" href="https://www.google.com/maps/search/Pra%C3%A7a+General+Tib%C3%BArcio+Urca" target="_blank" rel="noopener"><b>Urca</b><small>Morro da Urca e Pão de Açúcar</small><i>Ver no mapa ↗</i></a>
+    <a class="rv" href="https://www.google.com/maps/search/Pedra+da+G%C3%A1vea" target="_blank" rel="noopener"><b>Pedra da Gávea</b><small>Passagem dos Olhos</small><i>Ver no mapa ↗</i></a>
+    <a class="rv" href="https://www.google.com/maps/search/Campo+Escola+2000+Rio+de+Janeiro" target="_blank" rel="noopener"><b>Campo Escola 2000</b><small>Vias para treino e evolução</small><i>Ver no mapa ↗</i></a>
+  </div>
+  <p class="nota"><b>Melhoria · aparecer no Google</b>Quem busca "aula de escalada rio de janeiro" no Maps encontra Climb in Rio (374 avaliações), Companhia da Escalada (299) e Escaladas Clássicas (246). O Calango não aparece, e buscando o nome dele o Maps abre o Platô da Lagoa. O Campo Escola 2000 aparece com o telefone de outra escola. O Perfil da Empresa no Google resolve.</p>
+</div></section>
+
+<section id="duvidas"><div class="wrap">
+  <div style="text-align:center"><span class="eyebrow">Dúvidas</span><h2>Perguntas <em>frequentes</em></h2></div>
+  <div class="faq">
+    <details><summary>Nunca escalei. Posso ir?</summary><p>Pode. O batismo é feito justamente para quem nunca escalou: você aprende o básico de segurança antes de subir.</p></details>
+    <details><summary>Preciso ter equipamento?</summary><p>O que você precisa levar e o que está incluso é combinado no WhatsApp antes da data.</p></details>
+    <details><summary>Quanto custa?</summary><p>O valor depende da experiência e do tamanho do grupo. Chama no WhatsApp que o Calango te passa na hora.</p></details>
+    <details><summary>Dá pra ir em grupo ou com amigos?</summary><p>Dá. Conta no WhatsApp quantas pessoas vão e o nível de cada uma.</p></details>
+    <details><summary>Sou de uma marca. Como fazemos uma parceria?</summary><p>Clica em "Pedir mídia kit e valores" ou escreve para o e-mail de parcerias. Os números do perfil estão atualizados nesta página.</p></details>
+  </div>
+  <p class="nota" style="max-width:780px;margin-left:auto;margin-right:auto"><b>Melhoria · dúvidas antes da conversa</b>As respostas são um rascunho para o Calango validar. Responder antes evita a pergunta repetida no direct.</p>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <span class="eyebrow">Bora pra rocha</span>
+  <h2>Sua primeira via <em>começa com uma mensagem</em></h2>
+  <p class="lead" style="margin:14px auto 0">Faz o teste de 1 minuto ou chama direto no WhatsApp.</p>
+  <div class="cta-row"><a class="btn btn-p" href="#teste" data-ev="cta_teste_final">Fazer o teste</a><a class="btn btn-wa wa" data-msg="Oi, Calango! Vim pelo site e quero escalar." data-ev="wa_final" href="#">Chamar no WhatsApp</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap fgrid">
+  <div><a class="logo" href="#inicio"><img src="perfil.webp" alt="" width="40" height="40"><b>Calango Ninja</b></a><p style="margin-top:10px">Instrutor e guia de escalada em rocha · Rio de Janeiro</p></div>
+  <div>WhatsApp <a class="wa" data-msg="Oi, Calango! Vim pelo site." href="#">(21) 97599-6474</a><br>Parcerias: <a href="mailto:contatocalangoninja@gmail.com">contatocalangoninja@gmail.com</a><br><a href="https://www.instagram.com/calango.ninja/" target="_blank" rel="noopener">Instagram @calango.ninja</a> · <a href="https://www.tiktok.com/@calango_ninja" target="_blank" rel="noopener">TikTok @calango_ninja</a></div>
+</div></footer>
+
+<div class="sticky" id="sticky"><a class="btn btn-p" href="#teste">Qual escalada?</a><a class="btn btn-wa wa" data-msg="Oi, Calango! Vim pelo site e quero escalar." href="#">WhatsApp</a></div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Vídeo"><button class="x" type="button" aria-label="Fechar">✕</button><div class="in" id="lbin"></div></div>
+
+<button class="tog" id="tog" type="button"><i></i><span>Ver melhorias</span></button>
+<aside class="drawer" id="drawer" aria-label="Melhorias"><div class="dh"><b>O que muda</b><button type="button" id="dx" aria-label="Fechar">✕</button></div><div class="db">
+  <p class="dsub">Cada ponto abaixo está no site, marcado em laranja. Toque em "Ver no site" para ir até ele.</p>
+  <div id="dlist"></div>
+  <div class="fora"><h4>Fora do site</h4><ul>
+    <li>Criar o Perfil da Empresa no Google, com fotos e avaliações dos alunos.</li>
+    <li>Trocar o bit.ly gratuito (com página de anúncio) por este site na bio.</li>
+    <li>Atualizar os destaques do Instagram com preço, data e "chama no WhatsApp".</li>
+    <li>Unificar o contato: hoje a bio e o mídia kit têm e-mails diferentes.</li>
+    <li>Instalar Pixel da Meta e Google Analytics para medir de onde vem cada aluno.</li>
+    <li>Anúncio para quem assistiu os reels e ainda não chamou. Hoje ninguém anuncia batismo de escalada na Meta.</li>
+  </ul></div>
+</div></aside>
+
+<script>
+document.documentElement.classList.add('js');
+const WA='5521975996474';
+const track=(e,p)=>{try{(window.dataLayer=window.dataLayer||[]).push(Object.assign({event:e},p||{}))}catch(_){}};
+function waUrl(m){return 'https://wa.me/'+WA+'?text='+encodeURIComponent(m)}
+document.querySelectorAll('.wa').forEach(a=>{a.href=waUrl(a.dataset.msg||'Oi, Calango! Vim pelo site.');a.target='_blank';a.rel='noopener'});
+document.addEventListener('click',e=>{const a=e.target.closest('[data-ev]');if(a)track(a.dataset.ev)});
+/* quiz */
+const Q=[{q:'Você já escalou alguma vez?',o:['Nunca escalei','Poucas vezes','Escalo com frequência']},{q:'O que você quer agora?',o:['Experimentar por um dia','Aprender a escalar com autonomia','Fazer uma via clássica do Rio','Viajar para escalar']},{q:'Quando você quer ir?',o:['Ainda este mês','Nos próximos 3 meses','Só estou pesquisando']}];
+const box=document.getElementById('qbox');let st=0,ans=[];
+function rq(){if(st<Q.length){const s=Q[st];box.innerHTML='<div class="qbar"><i style="width:'+((st+1)/Q.length*100)+'%"></i></div><div class="qstep"><small>Pergunta '+(st+1)+' de '+Q.length+'</small><h3>'+s.q+'</h3><div class="opts">'+s.o.map((o,i)=>'<button type="button" data-i="'+i+'">'+o+'</button>').join('')+'</div></div>';return}
+ const [a,b,c]=ans;let r;
+ if(b===3)r=['Viagens e expedições','Você quer a aventura maior. Pergunta das próximas datas e do nível necessário.'];
+ else if(b===2&&a===0)r=['Batismo de escalada','Antes da via clássica, o batismo te dá a base de segurança. Depois, a via fica muito mais aproveitada.'];
+ else if(b===2)r=['Guiamento no Rio','Você já tem base. Combina a via, a data e o nível com o Calango.'];
+ else if(b===1)r=['Curso básico','Você quer se virar sozinho na rocha: o curso ensina os procedimentos de segurança.'];
+ else r=['Batismo de escalada','O melhor primeiro passo: um dia na rocha, com instrução e segurança do início ao fim.'];
+ const msg='Oi, Calango! Fiz o teste no site e deu: '+r[0]+'. Já escalei: '+Q[0].o[a]+'. Quero: '+Q[1].o[b]+'. Quando: '+Q[2].o[c]+'.';
+ box.innerHTML='<div class="qbar"><i style="width:100%"></i></div><div class="qres"><small style="color:var(--mut)">Sua escalada é</small><h3>'+r[0]+'</h3><p>'+r[1]+'</p><a class="btn btn-wa" target="_blank" rel="noopener" href="'+waUrl(msg)+'" data-ev="wa_quiz">Falar com o Calango no WhatsApp</a><button class="again" type="button">Refazer o teste</button></div>';
+ track('quiz_fim',{resultado:r[0]})}
+box.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.classList.contains('again')){st=0;ans=[];rq();return}if(b.dataset.i!==undefined){ans.push(+b.dataset.i);st++;rq()}});rq();
+/* reels */
+const R=[['DeZBzXtxsU1','293 mil','Enrolar corda de 70 m: quanto tempo?'],['CnktCUgvGPw','105 mil','Free solo na Pedra da Gávea'],['DeiJ4MqxA43','22,2 mil','O segredo da chaminé'],['Deej42LRqiS','20,1 mil','Ensina esse amarre aí'],['DerRlDSRpGx','17,6 mil','Na trilha para a rocha'],['DekjyI1xcBP','15,2 mil','Voa passarinho'],['Dfety9QAiwL','6,6 mil','POV: guia de escalada no RJ'],['DfkFWHiRVmv','3,5 mil','Passagem dos Olhos, Pedra da Gávea']];
+const tr=document.getElementById('track');
+tr.innerHTML=R.map(r=>'<button class="rc" type="button" data-id="'+r[0]+'" aria-label="Assistir: '+r[2]+'"><img src="'+r[0]+'.webp" alt="" loading="lazy" width="360" height="640"><span class="vw">'+r[1]+' views</span><span class="pl"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z" fill="#f59e4b"/></svg></span><span class="t">'+r[2]+'</span></button>').join('');
+document.querySelectorAll('.arrows button').forEach(b=>b.onclick=()=>tr.scrollBy({left:+b.dataset.d*(tr.querySelector('.rc').offsetWidth+14)*2,behavior:'smooth'}));
+const lb=document.getElementById('lb'),lbin=document.getElementById('lbin');
+tr.addEventListener('click',e=>{const c=e.target.closest('.rc');if(!c)return;lbin.innerHTML='<iframe src="https://www.instagram.com/reel/'+c.dataset.id+'/embed" title="Vídeo do Calango Ninja" allow="autoplay; encrypted-media" loading="lazy"></iframe>';lb.classList.add('on');track('play',{id:c.dataset.id})});
+function closeLb(){lb.classList.remove('on');lbin.innerHTML=''}
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.closest('.x'))closeLb()});
+/* reveal + sticky */
+const rv=[...document.querySelectorAll('.rv')],st2=document.getElementById('sticky'),hero=document.querySelector('.hero'),fin=document.querySelector('.final');
+const tick=()=>{rv.forEach(el=>{if(!el.classList.contains('in')&&el.getBoundingClientRect().top<innerHeight*.95)el.classList.add('in')});const f=fin.getBoundingClientRect();st2.classList.toggle('on',hero.getBoundingClientRect().bottom<0&&!(f.top<innerHeight&&f.bottom>0))};
+addEventListener('scroll',tick,{passive:true});addEventListener('resize',tick);tick();
+/* melhorias */
+const tog=document.getElementById('tog'),dr=document.getElementById('drawer'),dl=document.getElementById('dlist');
+const notas=[...document.querySelectorAll('.nota')];
+dl.innerHTML=notas.map((n,i)=>{const b=n.querySelector('b').textContent.replace('Melhoria · ','');return '<div class="di"><b>'+(i+1)+'. '+b+'</b><p>'+n.textContent.replace(n.querySelector('b').textContent,'')+'</p><button type="button" data-n="'+i+'">Ver no site →</button></div>'}).join('');
+function openM(){document.body.classList.add('melhorias');dr.classList.add('on');tog.style.display='none';track('ver_melhorias')}
+function closeM(){document.body.classList.remove('melhorias');dr.classList.remove('on');tog.style.display=''}
+tog.onclick=openM;document.getElementById('dx').onclick=closeM;
+dl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const n=notas[+b.dataset.n];dr.classList.remove('on');tog.style.display='';n.scrollIntoView({behavior:'smooth',block:'center'});n.classList.remove('flash');void n.offsetWidth;n.classList.add('flash')});
+addEventListener('keydown',e=>{if(e.key==='Escape'){closeLb();closeM()}});
+</script>
+</body>
+</html>
